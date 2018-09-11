@@ -30,4 +30,11 @@ $ npm i
 $ node src/index.js
 ```
 
+dockerを使う場合
+
+```
+$ docker build -t techbookfest-circle-bot .
+$ docker run -e EMAIL="xxxx" -e PASSWORD="xxx" -e SLACK_WEBHOOK="xxxx" -e SLACK_CHANNEL="xxx" -t techbookfest-circle-bot
+```
+
 6時間ごとに、指定したチャンネルに被サークルチェック数を発言します。
